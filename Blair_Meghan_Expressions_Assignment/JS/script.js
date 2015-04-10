@@ -15,3 +15,6 @@ console.log("Your total for the amount of Cotton you want is " + cottonTotal + "
 satinTotal = fabricChoice[2] * satinYards
 console.log("Your total for the amount of Satin you want is " + satinTotal + ".");
 
+var finalTotal;
+finalTotal += chiffonTotal, cottonTotal, satinTotal;
+console.log("Your final total for all of your fabric is " + finalTotal + ".");
