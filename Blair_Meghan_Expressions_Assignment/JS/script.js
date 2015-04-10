@@ -9,12 +9,12 @@ cottonYards = prompt("How many yards of Cotton do you want?");
 satinYards = prompt("How many yards of Satin do you want?");
 
 chiffonTotal = fabricChoice[0] * chiffonYards
-console.log("Your total for the amount of Chiffon you want is " + chiffonTotal + ".");
+console.log("Your total for the amount of Chiffon you want is " + Math.round(chiffonTotal) + ".");
 cottonTotal = fabricChoice[1] * cottonYards
-console.log("Your total for the amount of Cotton you want is " + cottonTotal + ".");
+console.log("Your total for the amount of Cotton you want is " + Math.round(cottonTotal) + ".");
 satinTotal = fabricChoice[2] * satinYards
-console.log("Your total for the amount of Satin you want is " + satinTotal + ".");
+console.log("Your total for the amount of Satin you want is " + Math.round(satinTotal) + ".");
 
-var finalTotal;
-finalTotal += chiffonTotal, cottonTotal, satinTotal;
-console.log("Your final total for all of your fabric is " + finalTotal + ".");
+
+finalTotal = chiffonTotal + cottonTotal + satinTotal;
+console.log("Your final total for all of your fabric is " + Math.round(finalTotal) + ".");
