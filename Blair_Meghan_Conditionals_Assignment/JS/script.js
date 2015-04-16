@@ -28,3 +28,13 @@ if (appAmount === ""){
 }else{
     console.log("Yay! I have the amount of apps you want to purchase!");
 }
+
+var musicTotal = songAmount + albumAmount;
+
+if (musicTotal <= moneyLeft){
+    console.log("You buy all the music you want!");
+}else if(appAmount <= moneyLeft){
+    console.log("You can buy all of the new apps!");
+}else{
+    console.log("Sorry but you don't have enough money...");
+}
