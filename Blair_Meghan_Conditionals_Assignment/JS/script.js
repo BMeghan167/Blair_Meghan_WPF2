@@ -2,10 +2,10 @@
 //April 16, 2015
 //Conditionals Assignment
 
-var songCost = 1.27
-var albumCost = 9.99
-var appCost = 2.99
-var moneyLeft = 30
+var songCost = 1.27;
+var albumCost = 9.99;
+var appCost = 2.99;
+var moneyLeft = 30;
 
 var songAmount = prompt("How many songs would you like to purchase from iTunes?");
 var albumAmount = prompt("How many albums would you like to purchase from iTunes?");
@@ -29,12 +29,18 @@ if (appAmount === ""){
     console.log("Yay! I have the amount of apps you want to purchase!");
 }
 
-var musicTotal = songAmount + albumAmount;
+var songTotal = songCost * songAmount;
+var albumTotal = albumCost * albumAmount;
+var appTotal = appCost * appAmount;
+var musicTotal = songTotal + albumTotal;
 
 if (musicTotal <= moneyLeft){
     console.log("You buy all the music you want!");
-}else if(appAmount <= moneyLeft){
+}else if(appTotal <= moneyLeft){
     console.log("You can buy all of the new apps!");
 }else{
     console.log("Sorry but you don't have enough money...");
 }
+
+var finalTotal = musicTotal + appTotal;
+
