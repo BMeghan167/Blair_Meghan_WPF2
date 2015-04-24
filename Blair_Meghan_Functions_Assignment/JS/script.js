@@ -19,3 +19,11 @@ function supplyCost(a, b, c){
 
 console.log("The total amount you are spending on the birthday cake, decorations and food is " + total + " .");
 
+var pizzaPpl = function(c, d){
+    var divide = (c*8)/d;
+    return divide;
+}
+
+var totalSlices = pizzaPpl(pizzaNum, peopleAmount);
+
+console.log("Each person at the birthday party will have " + totalSlices + " slices of pizza each.");
