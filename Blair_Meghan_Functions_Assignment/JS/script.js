@@ -10,14 +10,14 @@ var peopleAmount = prompt("How many people are coming again?");
 
 /*First we'll figure out how much it will cost for the three things the user is first prompted for*/
 
-var total = supplyCost(bdayCake, decorCost, foodCost);
+var total = supplyCost(Number(bdayCake), Number(decorCost), Number(foodCost));
 
 function supplyCost(a, b, c){
     var add = a + b + c;
     return add;
 }
 
-console.log("The total amount you are spending on the birthday cake, decorations and food is " + total + " .");
+console.log("The total amount you are spending on the birthday cake, decorations and food is $" + total + ".");
 
 var pizzaPpl = function(c, d){
     var divide = (c*8)/d;
